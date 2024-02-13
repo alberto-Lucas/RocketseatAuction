@@ -4,9 +4,7 @@ using RocketseatAuction.API.UseCases.Auctions.GetCurrent;
 
 namespace RocketseatAuction.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AuctionController : ControllerBase
+    public class AuctionController : RocketseatAuctionBaseController
     {
         //200 - OK
         //201 - Created
@@ -31,12 +29,6 @@ namespace RocketseatAuction.API.Controllers
             return Ok(result);
         }
 
-        /*
-        [HttpGet("GetTest")]
-        public IActionResult GetTest()
-        {
-            return NotFound("Lucas");
-        }
-        */
+        
     }
 }
